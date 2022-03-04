@@ -13,3 +13,25 @@
     <button class="btn btn-success" (click)="suma()">+2</button>
     <button class="btn btn-success" (click)="resta()">-2</button>
 </div>
+<div *ngIf="mayorVeinte()">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-3">
+            <h1>Hola mundo</h1>
+        </div>
+        <div class="col-4"></div>
+        </div>
+</div>
+<div *ngIf="menorCero()">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-3">
+            <div *ngFor="let key of [10,9,8,7,6,5,4,3,2,1,0];">
+                {{key}}
+            </div>
+           <h3>Adios mundo cruel</h3> 
+        </div>
+        <div class="col-4"></div>
+        </div>
+    
+</div>

@@ -18,5 +18,10 @@ export class CalculadoraComponent {
     resta( ) {
         this.numero = this.numero-2;
     }
-
+    mayorVeinte(){
+        return this.numero > 20;
+    }
+    menorCero(){
+        return this.numero < 0;
+    }
 }
